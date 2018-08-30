@@ -4,8 +4,8 @@ Sending message on cell complete.
 Sending messages from python code.
 
 For start:
-* Create new bot via @BotFather. Get API key like `110201543:AAHdqTcvCH1vGWJxfSeofSAs0K5PALDsaw `
-* Start conversation with our bot via `\start`
+* Create new bot via @BotFather https://core.telegram.org/bots#6-botfather. Get API key like `110201543:AAHdqTcvCH1vGWJxfSeofSAs0K5PALDsaw `
+* Start conversation with your bot via `\start`
 * Get chat_id from `curl https://api.telegram.org/bot{API_key}/getUpdates`
 
 That's all!

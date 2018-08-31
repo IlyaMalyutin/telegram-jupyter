@@ -4,10 +4,13 @@ import requests
 
 
 def send_tg(mess):
-    bot, chat = 'bot_token', 'int_chat_id'
-    url = 'https://api.telegram.org/bot{bot}/sendMessage?chat_id={chat}&text={message}'.format(bot=bot, chat=chat,
-                                                                                               message=mess)
-    requests.get(url)
+    try:
+        bot, chat = 'bot_token', 'int_chat_id'
+        url = 'https://api.telegram.org/bot{bot}/sendMessage?chat_id={chat}&text={message}'.format(bot=bot, chat=chat,
+                                                                                                   message=mess)
+        requests.get(url)
+    except requests.exceptions.RequestException as e
+        print(e)
 
 
 class CellEvents:
